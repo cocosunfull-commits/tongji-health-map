@@ -1,0 +1,5 @@
+{
+  "name": "Tongji Health Map",
+  "description": "A wellness-focused map of Tongji University Siping Campus, highlighting relaxation spots, sports facilities, and health services.",
+  "requestFramePermissions": ["geolocation"]
+}
