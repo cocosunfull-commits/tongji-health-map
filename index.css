@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #ec4899;
+  --color-primary: #fdf2f2;
+  --color-accent: #fbcfe8;
+}
+
+@layer base {
+  body {
+    @apply bg-primary text-slate-800 font-sans;
+  }
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  @apply bg-white/95 backdrop-blur-sm rounded-xl p-2 shadow-lg border border-pink-100;
+}
+
+.custom-popup .leaflet-popup-tip {
+  @apply bg-white/95;
+}
+
+.sidebar-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  @apply bg-pink-300 rounded-full;
+}
+
